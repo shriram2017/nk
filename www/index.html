@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+    <title>Nayonika Eye Care Charitable Trust</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+    <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, and is needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+     
+    a:hover
+        {
+            
+            text-decoration:none !important;
+        }
+    </style>
+
+    <!-- See explanation at the bottom of this file for info regarding placement of JS libraries. -->
+    <!-- These library references (below) are just examples to give you the general idea... -->
+    <!-- <script src="lib/mc/hammer.js"></script> -->
+    <!-- <script src="lib/ft/fastclick.js"></script> -->
+    <!-- <script src="lib/jq/jquery.js"></script> -->
+
+    <link rel="stylesheet" href="css/app.css">
+	 
+    <link rel="stylesheet" href="css/w3_v4.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/icons_v1.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar" style="width:70%;">
+<div class="w3-container w3-theme-d2 bg-light-brown">
+  <!--<span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>-->
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="images/nayonika_logo.png" alt="Nayonika Logo" style="width:100px;height:80px"> 
+  </div>
+</div>
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="hp" href="#"><!--<img src="images/home.png" alt="Menu Bar" width="35" height="35" >--> Home</a>
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p1" href="#">Nayonika</a>      
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p3" href="#">Self-Eye Test</a>
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p4" href="#">Importance of Eye Care</a>
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p5" href="#">Eye Conditions</a>
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p6" href="#">Eye Care Tips</a>
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p7" href="#">Healthy Foods For Eye</a>        
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p8" href="#">Exercises for Eyes</a>
+<a class="w3-bar-item w3-xlarge w3-button w3-padding-16 w3-border-bottom" id="p9" href="#">Contact Us</a>
+        
+        
+        <br><br><br><br><br>
+</nav>
+
+<header class="w3-top w3-bar w3-theme bg_brown">
+  <button class="w3-bar-item w3-button w3-xlarge w3-hover-theme sidebar_toggle" ><i class="fa fa-bars"></i></button>
+  <label class="w3-padding-16 w3-bar-item w3-text-white" style="font-size:16px;">Nayonika Eye Care Charitable Trust</label>
+</header>
+
+<div class="back-img" id="home_page" style="margin-top:50px;">
+    
+      
+         <p class="w3-center" >
+          <img src="images/nayonika_logo.png" style="margin-top:20%;" class="" width="200" height="200" alt="Image" />
+        </p>
+        <h1 class="w3-center " style="margin-top:10%;font-family: 'lucida Bright' serif" >
+           <span class="text-brown w3-xxxlarge" >Nayonika Eye Care</span><br><span class=" w3-xxxlarge text-brown">Charitable Trust <br> Bangalore</span>
+
+        </h1>
+</div>
+    
+<div class="w3-hide" id="page1" style="margin-top:50px;padding:3%;">
+    <br>
+    <h1 class=" heading text-brown w3-xxlarge">About NECT</h1>
+      <p class="para english">
+         Nayonika Eye Care Charitable Trust (NECT) is an Indian Non-Governmental Organization (NGO) registered under Trust Act. NECT was established in the year 2010 by Mr. Prashant S B with MBA from Central Michigan University, USA and DrSurekha, an ophthalmologist who has conducted over 5000 free cataract surgeries.
+      </p>
+    <hr>
+    <h1 class="heading w3-xxlarge text-brown">Aim and Objectives</h1>
+       <p class="para english">
+           Nayonika Eye Care Charitable Trust (NECT) is committed to provide comprehensive, affordable/costless and quality eye care services to the neediest and to make India a better nation with complete eye care for all citizens by marching towards achieving various goals discussed and raised by the World Health Organisation (WHO).
+      </p>
+    <p class="para english">
+        Keeping many relevant information from the WHO in our view, we at NECT, cultivate insights on the innovative eye social skills, which are required to operate in any Government or Private arena -- by developing solid quantitative and analytical eye care models. We at NECT, particularly working in community eye care development in urban slums and rural Karnataka, innovative social approaches are needed to tackle lowering vision problems and target to cover all states/zones with our services.
+    </p>
+    <p class="para english">
+       We aim to do this by conducting costless eye surgeries and treatment for patients who cannot afford to pay the cost of such treatments.
+    </p>
+    <p class="para english">
+        The primary objective is to provide exhaustive screening and detection of eye illnesses, advice and support for patients, their families and carers.
+    </p>
+    <hr>
+    <h1 class="heading w3-xxlarge text-brown">Mission</h1>
+     <div class="w3-panel w3-leftbar w3-border-brown bg_brown english">
+           <p class="para-small w3-text-white">We strive hard to provide quality healthcare by considering "Your Good Vision as our Mission” to restore patients’ sight and transform their life for betterment. </p>
+     </div>
+    <hr>
+    <h1 class="heading w3-xxlarge text-brown">Vision</h1>
+     <div class="w3-panel w3-leftbar w3-border-brown bg_brown english">
+           <p class="para-small w3-text-white">By marching towards "Vision 2020", we aim to accomplish "Good Vision for all”. </p>
+     </div>
+    <hr>
+    <h1 class="heading w3-xxlarge text-brown ">Our Services</h1>
+      <div class="">
+        <h2 class="w3-xlarge english">Comprehensive OPD (Out Patient Department)
+        </h2>
+           <ul class="w3-xlarge english">
+            <li>Cataract Surgery & variable IOL</li>
+            <li>Implantable Contact Lens (ICL) services</li>
+            <li>Corneal Disorders</li>
+            <li>Glaucoma</li>
+            <li>Medical Retina Management</li>
+            <li>Macular Degeneration</li>
+            <li>Uveitis & Ocular Inflammation Treatment</li>
+            <li>Contact Lens services (Soft, Hard, Colors and Prosthetic)</li>
+          </ul>
+      </div>
+    <hr>
+    <h1 class="heading w3-xxlarge text-brown">Our Work so far</h1>
+    <div class="">
+        <p class="para english">NECT has been providing complete eye care treatment since 2010 in Urban and Rural Karnataka.
+        </p>
+           <ul class="w3-xlarge english">
+            <li>NECT organized free eye-screening camps for more than 213,000 patients, including 6900 free screening for Diabetic Retinopathy (DR).</li>
+            <li>Approximately, 9300 free cataract surgeries have been conducted by NECT. </li>
+            <li>NECT provided eye care treatment for various other eye related diseases.</li>
+            <li>NECT has already conducted 2300 free surgeries since last 5 months in Koppal and Yadagiri Districts.</li>
+          
+          </ul>
+         <p class="para english">
+               The blind population in India is estimated to be around 16 million, out of which there are approximately 11 Million who have lost their vision due to Cataract and 3.8 Million due to Refractive errors. NECT aims to prevent blindness and reduce rate of blindness to a great extent by providing free eye care services to the needy. NECT has started a new initiative of HEALTHY VISION INDIA with an aim of covering network of charitable hospitals across India to offer vision care for all.
+           </p>
+    </div>
+    
+    <hr>
+         <h1 class="heading w3-xxlarge text-brown">Awards</h1>
+    <p class="para english">
+    Nayonika Eye Care Charitable trust has been nominated for the prestigious International Award for the medical sphere, the <b>'Rose of Paracelsus'</b> and has been awarded a certificate of <b>'Best Medical practice'</b> from the International Socrates Award Nomination Committee, UK.
+    </p>
+    
+</div>
+ 
+<div class="w3-hide" id="page3" style="margin-top:50px;padding:3%;">
+    <br>
+    <h2 class="page_head w3-center w3-xlarge">Self-Eye Test</h2>
+    <section class="para_font">
+       <br>
+    </section>
+</div> 
+<div class="w3-hide" id="page4" style="margin-top:50px;padding:3%;">
+    <br>
+    <h2 class="page_head text-brown  w3-xxlarge">Importance of Eye Care</h2><hr>
+    <section class="para_font">
+   
+
+     <p class="para english" >
+        When you take good care of your eyes, you take good care of yourself. Your eye sight is one of your most important senses as 80% of what you perceive comes through our sense of sight. You need to protect your eyesight to ensure many more years of enjoying vision. By protecting your eyes you will reduce the odds of blindness and vision loss for the rest of your life. You can also reduce the risk of developing eye diseases such as Cataracts and Glaucoma by looking after your eyes.
+    </p>
+        <p class="para english">
+          Vision is an essential part of everyday life, determining how people of all ages learn, communicate, work, play, and interact with the world. There are many things you can do to keep them healthy and make sure you your vision is the best. Follow these simple steps for maintaining healthy eyes well into your sunset years.
+        </p>
+        <p class="para english">
+        You might think your vision is fine or that your eyes are healthy, but visiting your eye care professional for a comprehensive dilated eye examination  is the only way to really be sure. When it comes to common vision problems, some people don’t realize they could see better with glasses or contact lenses. In addition, many common eye diseases such as glaucoma, diabetic eye disease and age-related macular degeneration often have no warning signs. A dilated eye examination is the only way to detect these diseases in their early stages.
+        </p>
+
+    </section>
+</div>
+<div class="w3-hide" id="page5" style="margin-top:50px;padding:3%;">
+    <br>
+    <h2 class="page_head w3-center w3-xlarge">Eye Conditions</h2>
+    <section class="para_font">
+       <br><br><br>
+        
+        
+    </section>
+</div>
+<div class="w3-hide" id="page6" style="margin-top:50px;padding:3%;">
+    <br>
+    <h2 class="page_head text-brown w3-xxlarge">Eye Care Tips</h2>
+    <hr>
+    <section class="para_font w3-cell">
+      <div class="w3-cell-row">    
+       <h3 class="text-brown w3-xlarge">Always wash your eyes :</h3>
+        <p class="para english">
+            
+        Perform water procedures for your eyes whenever it is possible, even during your washroom breaks, try to splash water into your eyes. Make sure to wash your eyes with clean water every night and every morning when you wake up. This will prevent infection.
+        </p>
+     </div>
+        
+      <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Always keep your eyes clean :</h3>
+        <p class="para english">
+            
+       Remove eye makeup every night. This prevents small pieces of make-up from winding up in your eye and possibly scratching your cornea. Keep your eyes clean! Bacteria can easily cause painful and damaging infections in your eyes. Be very careful putting on and removing makeup, inserting contacts, and keep tissues used for sneezing away from your eyes.
+        </p>
+      </div>    
+        
+        
+     <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Always wash your hands :</h3>
+        <p class="para english">
+            
+      To avoid troublesome eye infections like sore eyes and sty, wash your hands several times a day. Don’t rub your fingers on your eyes after shaking hands with someone. That’s a sure way to get sore eyes.
+        </p>
+    </div>     
+    
+    <div class="w3-cell-row">        
+         <h3 class="text-brown w3-xlarge">Always eat healthy foods for healthy vision :</h3>
+        <p class="para english">
+            
+      Foods packed with vitamin C and E as well as leafy greens that have plenty of omega-3 fatty acids are great for eye health. Don’t feast on junk food. Your eyes need lots of zinc, beta-carotene, vitamin C, and omega-3 fats. Cantaloupe, carrots, spinach, peanuts, chick peas.
+        </p>
+    </div>    
+        
+    <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Stare at the sun :</h3>
+        <p class="para english">
+            
+     If you really want to know how to improve your vision you can to get some sun in the morning. Most people go to extremes trying to avoid sunlight these days, but the human body actually needs a certain amount of light. Sunlight not only provides vitamin D but also helps the eyes to contract and dilate – another form of eye exercise that helps strengthen your eyes.
+        </p>
+    </div>    
+        
+        
+     <div class="w3-cell-row">
+        <h3 class="text-brown w3-xlarge">Exercise regularly :</h3>
+         <p class="para english">
+            
+     Around 30 minutes of exercise can reduce your eye pressure by 20 percent. Deep, slow breathing can also reduce eye pressure by increasing the drainage of eye fluid (called the lymphatic system). Thus, both exercise and deep breathing may help patients with glaucoma, a condition where one experiences headache and an increase in eye pressure. Also, stretch your spine and other joints whenever possible.
+        </p>
+    </div>   
+        
+        <h3 class="text-brown w3-xlarge">Sleep eight hours :</h3>
+         <p class="para english">
+            
+     Getting enough sleep will help your eyes recover from a long day’s work. Seven to eight hours of sleep is great. You might have noticed that when you go for long periods of time without adequate sleep, you feel tired and heavy headed. You also may have noticed that your vision seems blurred and that it almost hurts to keep your eyes open. Sleep is important for all your bodily functions, and getting adequate rest can assist in eyesight improvement since sleep allows overworked eye muscles to relax completely.
+        </p>
+        
+        
+        <h3 class="text-brown w3-xlarge">Always wear goggles :</h3>
+         <p class="para english">
+            
+     Make sure to wear goggles when swimming or doing carpentry. A properly fitting pair of swimming goggles will protect your eyes from chlorine, while carpentry goggles will prevent debris from causing corneal abrasions. 
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Always wear helmets :</h3>
+         <p class="para english">
+            
+     If your two-wheeled vehicle users, we recommend using glasses or a helmet that is face protected. This is useful in order to reduce road dust on your eyes. 
+        </p>
+        
+        <h3 class="text-brown w3-xlarge">Check your blood sugar levels periodically :</h3>
+         <p class="para english">
+           Diabetics are at higher risk for eye disease. That is why they need a comprehensive eye exam at least once a year. If you have diabetic retinopathy, you may need an eye examination more often. 
+     
+        </p>
+        
+        
+        <h3 class="text-brown w3-xlarge">Blink your eyes frequently :</h3>
+         <p class="para english">
+           People tend to reduce blink rate while working on computer. This can lead to dry eyes. Try to blink 12 to 15 times every minute.
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Always wear protective eyewear :</h3>
+         <p class="para english">
+           Those who play a sport or work in a field where eye protection is recommended should do so, Palm Beach Post reports. Eye injuries happen more often than not in these situations, but they can easily be preventable.
+        </p>
+        
+        
+        <h3 class="text-brown w3-xlarge">Keep the surroundings clean :</h3>
+         <p class="para english">
+           Do keep your home free of dust, especially the bedroom. Use a dust mite cover for your mattress and pillows and frequently wash your sheets in hot water. For floors and counters, use a clean damp cloth and mop instead of dry dusting. For carpeting, use a vacuum with an allergen filter, like a high-efficiency particulate air (HEPA) filter.
+        </p>
+        
+        
+        <h3 class="text-brown w3-xlarge">Drink plenty of water :</h3>
+         <p class="para english">
+           The next time you notice your vision getting blurry drink a glass of water. It might just be that you're dehydrated and you'll see an almost instant improvement in your vision.
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Knowing your family history is important :</h3>
+         <p class="para english">
+           Many eye diseases cluster in families, so you should know your family’s history of eye disease because you may be at increased risk. Age-related eye diseases, including cataracts, diabetic retinopathy, glaucoma and AMD are expected to dramatically increase.
+        </p>
+        
+          <h3 class="text-brown w3-xlarge">Avoid long hours at the electronic devices :</h3>
+         <p class="para english">
+           This can include computers/laptops, mobile phones and/or TVs. Try the 20-20-20 rule: Every 20 minutes, look away about 20 feet in front of you for 20 seconds. This can help reduce eyestrain, especially if you work in front of the computer a lot. Blinking is also beneficial as it lubricates the eyes. Sometimes being too engrossed in your work makes you forget to blink and rest your eyes.
+        </p>
+        
+         <h3 class="text-brown w3-xlarge">Avoid smoking :</h3>
+         <p class="para english">
+          Smoking is as bad for your eyes as it is for your health. Studies have linked smoking to an increased risk of developing age-related macular degeneration, cataract, and optic nerve damage. These conditions can lead to blindness.
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Avoid dusty areas :</h3>
+         <p class="para english">
+          Your eyes might turn red if you are being exposed to dust.
+        </p>
+        
+        <h3 class="text-brown w3-xlarge">Avoid dry air :</h3>
+         <p class="para english">
+          Serious dryness can lead to corneal abrasions and even blindness.
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Avoid working in poor light :</h3>
+         <p class="para english">
+          Reading in poor light can strain your eyes. Use a soft white light that doesn’t produce glare and reflect directly on your eyes.
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Avoid staring at bright lights :</h3>
+         <p class="para english">
+          Looking directly at bright lights and laser pointers can be harmful to your eyes.
+        </p>
+        
+        
+        <h3 class="text-brown w3-xlarge">Avoid sharing clothes :</h3>
+         <p class="para english">
+          Use a fresh towel/kerchief every time you wipe your face. Sharing face towels and washers with others is a guaranteed way to get the highly contagious eye infection called conjunctivitis (pinkeye).
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Avoid using chemicals :</h3>
+         <p class="para english">
+          Don’t let children play with fireworks, sharp objects, or toys that shoot. Darts, sparklers, creams/liquids and other dangerous toys can cause blindness.
+        </p>
+        
+        
+         <h3 class="text-brown w3-xlarge">Avoid spending a lot of time around dogs or cats :</h3>
+         <p class="para english">
+          Their dander and hair can quickly affect your eyes.
+        </p>
+        
+          <h3 class="text-brown w3-xlarge">Reduce the intake of sugar :</h3>
+         <p class="para english">
+          Sugar affects the eyes by causing high level of insulin in the blood.
+        </p>
+        
+          <h3 class="text-brown w3-xlarge">Avoid reading in awkward positions :</h3>
+         <p class="para english">
+          Do not read while lying down, in a moving train or bus. Don’t read with poor lighting or hold your book too close.
+        </p>
+        
+         <h3 class="text-brown w3-xlarge">Visit an eye doctor if you have any discomfort in eyes :</h3>
+         <p class="para english">
+          Eye doctors are able detect an array of different eye problems so it is very important to schedule appointments regularly. Don’t allow two years to pass without an eye exam. Think prevention. Early detection and treatment is always best. Don’t ignore headaches, eyestrain, or double vision. Get the consultation of doctor immediately. If you have diabetes, hypertension (high blood pressure) periodic eye check-up is important. Wear the correct contacts lenses and glasses. Keep your prescriptions up to date.
+        </p>
+        
+</section>
+</div>
+    
+    
+<div class="w3-hide" id="page7" style="margin-top:50px;padding:3%;">
+    <br>
+    <h2 class="heading page_head text-brown w3-xxlarge">Healthy Food for Eyes</h2>
+    <section class="para_font">
+        
+        
+      <div class="w3-cell-row heading">    
+        <h3 class=" text-brown w3-center w3-xxlarge">Eggs</h3>
+          <center><img src="images/foods/egg.png" class=" w3-border w3-padding" width="100" height="100" alt="Eggs" /></center>
+        <p class="para english">
+            
+       The yolk is a prime source of lutein and zeaxanthin—plus zinc, which also helps reduce your macular degeneration risk.
+        </p>
+      </div>  
+        
+     <div class="w3-cell-row heading">    
+        <h3 class=" text-brown w3-center w3-xxlarge">Carrots</h3>
+          <center><img src="images/foods/carot.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+       Carrots can easily be added into salads and soups, and are always a great side veggie with lunch or dinner.
+        </p>
+      </div>  
+        
+        <div class="w3-cell-row heading">    
+        <h3 class=" text-brown w3-center w3-xxlarge">Spinach</h3>
+          <center><img src="images/foods/spinach.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+       Spinach provides four eye-protecting ingredients! It comes packaged with vitamin C, beta carotene and large amounts of lutein and zeaxanthin - a matched pair of antioxidants found in high concentrations in the tissue of the macula. Because they absorb 40 to 90 percent of blue light intensity, these nutrients act like sunscreen for your eyes
+        </p>
+      </div>
+        
+      <div class="w3-cell-row heading">    
+        <h3 class=" text-brown w3-center w3-xxlarge">Leafy greens</h3>
+          <center><img src="images/foods/spinach.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+       They're packed with lutein and zeaxanthin—antioxidants that, lower the risk of developing macular degeneration and cataracts.
+        </p>
+      </div> 
+        
+      <div class="w3-cell-row heading">    
+        <h3 class=" text-brown w3-center w3-xxlarge">Fatty fish</h3>
+          <center><img src="images/foods/fish.png" class=" w3-border w3-padding" width="100" height="100" alt="Fishes" /></center>
+        <p class="para english">
+            
+       Tuna, salmon, mackerel, anchovies and trout are rich in Docosahexaenoic acid (DHA), a fatty acid found in your retina—low levels of which have been linked to dry eye syndrome. 
+        </p>
+      </div> 
+        
+     <div class="w3-cell-row heading">    
+        <h3 class=" text-brown w3-center w3-xxlarge">Soy</h3>
+          <center><img src="images/foods/soya.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+       It contains essential fatty acids, phytoestrogens, vitamin E and natural anti-inflammatory agents that are good for the eyes. Soy products like soy milk, soy beans, soy yogurt are good for eye health. Olive oil and corn are also good for the eyes as these contain good amount of Vitamin E-Foods for Eyes
+        </p>
+      </div> 
+        
+       <div class="w3-cell-row heading">   
+            <h3 class=" text-brown w3-center w3-xxlarge">Broccoli</h3>
+          <center><img src="images/foods/broccali.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+       Broccoli not only improves eyesight but also prevents eyes from cataract. Broccoli contains lutein and zeaxanthin (phytonutrient antioxidants in the carotenoid family). These are very good for the eye lenses. In addition, these carotenoids protect eye cells from free radical stressors.
+        </p>
+      </div> 
+        
+        
+    <div class="w3-cell-row heading">   
+            <h3 class=" text-brown w3-center w3-xxlarge">Garlic</h3>
+          <center><img src="images/foods/garlic.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+       Garlic is an excellent food for improving eyesight. It contains sulfur that helps making the lens stronger and resilient. Onions are also rich with sulfur and good for the eyesight.
+        </p>
+      </div> 
+        
+        
+     <div class="w3-cell-row heading">   
+            <h3 class=" text-brown w3-center w3-xxlarge">Tomatoes</h3>
+          <center><img src="images/foods/tammato.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+       Carotenoids in tomatoes help in providing good nutrition to the eyes. It also includes lycopene which again aids eye health considerably. It prevents any damage to the retina and also provides it with Vitamin C that helps in protecting the vision-Foods for Eyes.
+        </p>
+      </div> 
+        
+    
+        
+    <div class="w3-cell-row heading">   
+            <h3 class=" text-brown w3-center w3-xxlarge">Apricots</h3>
+          <center><img src="images/foods/apricots.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+            
+      Apricots are rich in beta carotene, a carotenoid that the body converts to vitamin A. And research shows beta carotene may help with night vision -- and possibly even play a part in preventing cataracts. 
+        </p>
+      </div> 
+        
+    <div class="w3-cell-row heading">   
+            <h3 class=" text-brown w3-center w3-xxlarge">Citrus and Berries</h3>
+          <center><img src="images/foods/citrus-berry.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+       These fruits are powerhouses of vitamin C, which have been shown to reduce the risk of developing macular degeneration and cataracts.
+        </p>
+      </div>
+        
+    <div class="w3-cell-row heading">   
+            <h3 class=" text-brown w3-center w3-xxlarge">Almonds and Seeds</h3>
+          <center><img src="images/foods/almond1.png" class=" w3-border w3-padding" width="100" height="100" alt="Carrots" /></center>
+        <p class="para english">
+       Vitamin E protects the cells in our eyes from free radicals and slows the progression of cataracts and age-related macular generation. Eat just one ounce of sunflower seeds or almonds, and you’ll earn more than a third of the daily value of vitamin E. Wheat germ, hazelnuts, and peanut butter also pack plenty of the vitamin.
+        </p>
+      </div>  
+        
+    <div class="w3-cell-row heading">   
+        <h3 class=" text-brown w3-center w3-xxlarge">Zinc-based food</h3>
+        
+        <p class="para english">
+       Without enough zinc, our eyes can suffer from poor night vision and possibly cataracts. Oysters, liver, red meat, poultry, milk, shellfish, baked beans, and whole grains are valuable sources of zinc.
+        </p>
+    </div>  
+        
+     <div class="w3-cell-row heading">   
+        <h3 class=" text-brown w3-center w3-xxlarge">Dark Chocolates</h3>
+        
+        <p class="para english">
+       It contains flavonoids which protect blood vessels of the eyes. As a result of that cornea and lens stay strong. One point should be noted that dark chocolate needs to be pure to get the desired result. 
+        </p>
+    </div>      
+        
+    </section>
+</div>
+<div class="w3-hide" id="page8" style="margin-top:50px;padding:3%;">
+    <br>
+    <h2 class="page_head heading text-brown w3-xxlarge">Exercises for Eyes</h2>
+    <section class="para_font">
+       
+    <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Palming :</h3>
+        <p class="para english">
+            
+       Rub your hands together for 10 to 15 seconds until they feel warm and energized. Then gently place your hands over your eyes, with the fingertips resting on the forehead, the palms over the eyes, and the heels of the hands resting on the cheeks. Don’t touch the eyeballs directly, but hollow the hands slightly and allow them to form a curtain of darkness in front of the eyes. Close your eyes, breathe deeply, and relax. Envision the eyes absorbing the darkness like a sponge, while also welcoming healing warmth and energy from the hands. Invite the eyes to grow soft and spacious, and enjoy this break from visual stimulation. Continue this palming action as long as it feels soothing—for just a few seconds or up to five minutes. When you are ready to emerge, gently remove the hands from the face and slowly open the eyes.
+        </p>
+      </div>
+        
+     <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Focus Shifting :</h3>
+        <p class="para english">
+            
+       Relax your body and breathe comfortably. Hold one arm straight out in front of you in a loose fist, with the thumb pointing up. Focus on your thumb. While keeping your eyes trained on it, slowly move the thumb toward your nose until you can no longer focus clearly on it. Pause for a breath or two, and then lengthen the arm back to its original outstretched position, while maintaining focus on the thumb. Repeat up to 10 times.
+        </p>
+      </div> 
+        
+    <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Eye Rolling :</h3>
+        <p class="para english">
+            
+       Sit upright with a long spine and relaxed breath. Soften your gaze by relaxing the muscles in your eyes and face. Without moving your head, direct your gaze up toward the ceiling. Then slowly circle your eyes in a clockwise direction, tracing as large a circle as possible. Gently focus on the objects in your periphery as you do this, and invite the movement to feel smooth and fluid. Repeat three times, then close the eyes and relax. When you’re ready, perform the same eye-rolling movement three times in a counter clockwise direction.
+        </p>
+    </div> 
+        
+     <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Massaging :</h3>
+        <p class="para english">
+            
+       Keeping your eyes closed, use your middle finger to massage the eye-socket bones and down to the bridge of the nose. Repeat 8-10 times.
+        </p>
+      </div>
+        
+        
+    <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">The Figure Eight :</h3>
+        <p class="para english">
+       This a great exercise for your eye muscles. 1) Imagine a giant figure of eight (8) in front of you about 10 feet in front of you. 2) Now turn the figure eight on its side. 3) Trace the figure of eight with your eyes, slowly. 4) Do it one way for a few minutes and then do it the other way for a few minutes. This exercise helps you increase your eyes flexibility
+        </p>
+    </div>
+        
+     <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Near and Far Focusing :</h3>
+        <p class="para english">
+       Sitting or standing, place your thumb about 10 inches in front of you and focus on it. Now focus on something else about 10–20 feet in front of you. Take deep breaths between focusing on your thumb and the object 10-20 feet away from you.
+        </p>
+    </div>
+        
+   <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Zooming :</h3>
+        <p class="para english">
+       Sit in a comfortable position Stretch out your arm with your thumb in the hitchhiking position. Focus on your thumb as your arm is outstretched. Now bring your thumb closer to you, focusing until your thumb is about 3 inches in front of your face. Now move your thumb away again until your arm is fully outstretched. Do this for a few minutes at a time throughout the day.
+        </p>
+    </div> 
+        
+    <div class="w3-cell-row">    
+        <h3 class="text-brown w3-xlarge">Hanging and Nodding :</h3>
+        <p class="para english">
+       Head down and feet up for 4 to 5 mins daily will improve blood circulation to head and face, which will help to improve your vision. Also, nod your head hundred times a day. This will increase blood circulation to eyes and helps in improved vision.
+        </p>
+    </div> 
+        
+        
+            
+        
+        
+        
+        
+        
+    </section>
+</div> 
+<div class="w3-hide" id="page9" style="margin-top:50px;padding:3%;">
+    <br>
+    <h2 class="page_head heading text-brown w3-xxlarge">Contact Us</h2>
+    <section class="para_font">
+   
+<div class="address">
+   <h3 class="text-brown w3-center w3-xlarge"><i class="fa fa-map-marker"></i> Address</h3>   
+    <p class="para">
+     No18, 3rd Main, Opp Syndicate Bank, Raghavendra Nagar, Near to Raghavendra Circle, T C Palya Main Road, Ramamurthy Nagar, Bangalore - 560 016.
+    </p>
+</div> 
+
+<hr>        
+        
+<div class="web">
+   <h3 class="text-brown w3-center w3-xlarge"><i class="fa fa-globe"></i> Web</h3>   
+   <ul class="w3-xlarge">
+        <li> <a href="http://www.nayonikaeyecare.com/" class="w3-xlarge">http://www.nayonikaeyecare.com/</a>
+        </li>
+       
+    </ul> 
+</div>         
+  
+ <hr>
+        
+ <div class="contact">
+   <h3 class="text-brown w3-center w3-xlarge"><i class="fa fa-phone"></i> Contact</h3>   
+    
+    <ul class="w3-xlarge">
+        <li><label class="w3-xlarge">Clinic : </label> <a href="tel:080-2566 6125" class="w3-xlarge">080-2566 6125</a>
+        </li>
+     <li>
+      <label>Appointment : </label> <a href="+9198861 37150">+91-98861 37150</a>
+     </li>     
+    </ul>     
+</div>        
+ 
+<hr>        
+        
+<div class="timing">
+    <h3 class="text-brown w3-center w3-xlarge"><i class="fa fa-clock-o"></i> Visiting Hours</h3>    
+       <table  class="w3-table w3-xlarge w3-bordered w3-border">
+         <tr>
+           <th>Clinic</th>  
+           <th>Hours</th>  
+         </tr>
+         <tr>
+           <td>Monday To Saturday</td>  
+           <td> :09:00 am - 01:00 pm and 04:00 pm - 08:00 pm</td>  
+         </tr>   
+         
+        <tr>
+           <td>Sunday</td>  
+           <td> :Closed</td>  
+         </tr> 
+         
+       </table>
+        
+        <br><br>
+        
+       <table  class="w3-table w3-xlarge w3-bordered w3-border">
+         <tr>
+           <th>Appointment</th>  
+           <th>Hours</th>  
+         </tr>
+         <tr>
+           <td>Monday To Saturday</td>  
+           <td> :09:00 am - 01:00 pm and 04:00 pm - 08:00 pm</td>  
+         </tr>   
+         
+        <tr>
+           <td>Sunday</td>  
+           <td> :Closed</td>  
+         </tr> 
+         
+       </table>    
+   </div>      
+      
+      </section>
+</div> 
+
+
+   
+    <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+    <!-- Place your remote debugging weinre script URL here, if it does not work below. -->
+
+    <!-- See <head> section above for additional JS libraries loaded as part of this application. -->
+
+    <!-- "Phantom" cordova.js required for projects that use Cordova plugins. -->
+    <script src="cordova.js"></script>
+
+    <!-- for your event code, see README and file comments for details -->
+    <script src="js/app.js"></script>
+    <!-- for your init code, see README and file comments for details -->
+    <script src="js/init-app.js"></script>
+    <!-- normalizes device and document ready events, see file for details -->
+    <script src="xdk/init-dev.js"></script>
+    <script>
+        /* closeSidebar();
+              function openSidebar() {
+                       document.getElementById("mySidebar").style.display = "block";
+               }
+             function closeSidebar() {
+                  document.getElementById("mySidebar").style.display = "none";
+              }*/
+        
+       function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-gray";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-gray", "");
+    }
+}
+
+   </script>
+    <script src="js/jquery_v3.2.1.js"></script>
+    <script src="js/comman.js"></script>
+    <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+    <!-- Place your remote debugging weinre script URL here, if it does not work above. -->
+</body>
+
+
+<!--
+
+    Recommended JavaScript library load order for hybrid Cordova apps:
+
+    * "Device-Independent" JavaScript libraries.
+    * optional: weinre debug script tag for remote console debug (see notes).
+    * Intel XDK device JavaScript library.
+    * Cordova/PhoneGap device JavaScript library.
+    * "Device-Dependent" JavaScript libraries.
+    * Application JavaScript <script> tags and libraries.
+    * optional: weinre debug script tag for remote console debug (see notes).
+
+    In complex projects, the JavaScript load order is important. You must
+    insure that the underlying device API native code finishes its init, which
+    usually takes longer than the webview init...
+
+    VERY IMPORTANT: notice that all of the libraries used in this project are
+    located within the app's local directories, which means they will get
+    bundled with the app. They are NOT being pulled in over the net. In most
+    cases, this is what you should be doing when you build a hybrid mobile
+    app. This insures that you always use the JS code that you debugged
+    against AND that you are not requiring a data connection (network
+    connection) to get the app started. If your app startup required a data
+    connection to initialize and start interaction with the user, lack of a
+    reliable network connection could be disasterous. Not to mention it
+    generally results in a slower load time. Loading locally is much
+    friendlier to your end user's data plan and their device battery.  :-)
+
+    NOTE: do not use a directory prefix with the cordova.js file - it is
+    inserted automatically by the build system, simulator and other tools and
+    is assumed to be in the index.html source directory. You will not find
+    this JS file anywhere in your project, it is a "phantom" library. If you
+    do see copies of this file as part of your project it should be removed to
+    avoid confusion and problems.
+
+    LIBRARY NOTE: If you are using a large number of JavaScript libraries,
+    especially third-party libraries (like jQuery, {{ mustache }}, Underscore,
+    etc.) that are "independent" of the device APIs provided by the Cordova
+    library and plugins - and they are independent of your app code - your
+    app initialization will be most successful if you load these libraries
+    BEFORE the Cordova JS file, in the <head> section of your index.html file.
+    Obviously, any code that depends on Cordova APIs must be loaded AFTER the
+    cordova.js library.
+
+    Libraries that are "independent" of the device APIs are libraries that you
+    could use in a desktop browser. "Dependent" libraries are, most likely,
+    your own code that you've written specifically to work with the Cordova
+    device APIs. In some cases, if your device-dependent code requires access
+    to device-independent code to get started, you may have to use something
+    like CommonJS to force the device-dependent code to wait for the
+    device-independent code to initialize, otherwise you may have trouble
+    getting your app started.
+
+    Because of this added dependency on the underlying native code (device)
+    initialization, you should not use the "document ready" event to start
+    your application. You should wait for the cordova "deviceready" event
+    before you begin your application (if it uses any Cordova device APIs); in
+    practice, it is best to wait for both. (See the init-dev.js file in this
+    template for an example of how to wait for both, it generates a custom
+    "app.Ready" event that you can wait for and just forget about the other
+    events.)
+
+    NOTE: *any* library that redefines addEventListener() or fiddles with
+    outstanding events may interfere with capturing the Cordova "deviceready"
+    event and should, therefore, be placed *BEFORE* the Cordova JS library in
+    the load order.
+
+    ALSO: if you use weinre for debugging, you may have to experiment with the
+    placement of the weinre script. Some recommended locations are shown
+    within this app. If these locations do not work, you may have to
+    experiment. The optimum placement can be app-specific, primarily as a
+    function of the included JavaScript libraries and your initialization.
+
+-->
+
+</html>
